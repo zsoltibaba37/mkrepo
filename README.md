@@ -1,6 +1,6 @@
-# makerepo
+# mkrepo mean make repository
 
-This script create a new github repositories from command line. 
+This script create a new github repository from command line. 
 
 And then push all file to the repository.
 
@@ -9,7 +9,7 @@ The repository name is same as the current directory name.
 
 #### Installation
 
-No need install this script.
+You do not have to install it.
 
 #### Files
 
