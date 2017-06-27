@@ -25,8 +25,8 @@ $ mkrepo
 
 ### How it works
 ```sh
-$ The repository name is $repo_name. 
+$ The repository name is "pwd | xargs basename" . 
 $ Give me the first commit: 
 $ Enter host password for user 'username'
 $ Enter passphrase for key '/home/user/.ssh/id_rsa':
-
+```
