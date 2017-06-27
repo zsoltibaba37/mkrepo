@@ -1,6 +1,6 @@
 # mkrepo mean make repository
 
-This script create a new github repository from command line. 
+This script create a new github repository under command line. 
 
 And then push all file to the repository.
 
