@@ -10,4 +10,3 @@ git commit -m "$commit"
 curl -u 'zsoltibaba37' https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
 git remote add origin "git@github.com:zsoltibaba37/$repo_name.git"
 git push -u origin master
-
