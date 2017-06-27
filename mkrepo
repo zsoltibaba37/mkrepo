@@ -1,9 +1,12 @@
 #!/bin/bash
-read -p " Add meg a repo nevét: " reponame
-read -p " Írd be az első commit-ot:" commit
+repo_name=`pwd | xargs basename`
+echo " The repository name is $repo_name. "
+#read -p " Give me the name of the repository: " repo_name
+read -p " Give me the first commit: " commit
+
 git init
 git add .
 git commit -m "$commit"
-curl -u 'zsoltibaba37' https://api.github.com/user/repos -d '{"name":"$reponame"}'
-git remote add origin git@github.com:zsoltibaba37/$reponame.git
+curl -u 'zsoltibaba37' https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
+git remote add origin "git@github.com:zsoltibaba37/$repo_name.git"
 git push origin master
