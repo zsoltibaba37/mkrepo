@@ -1,7 +1,11 @@
 # makerepo
 
-This script create a new github repositories from command line.
+This script create a new github repositories from command line. 
+
 And then push all file to the repository.
+
+The repository name is same as the current directory name.
+
 
 #### Installation
 
@@ -27,6 +31,6 @@ $ mkrepo
 ```sh
 $ The repository name is "pwd | xargs basename" . 
 $ Give me the first commit: 
-$ Enter host password for user 'username'
-$ Enter passphrase for key '/home/user/.ssh/id_rsa':
+$ Enter host password for user '<git username>'
+$ Enter passphrase for key '/home/<user>/.ssh/id_rsa':
 ```
