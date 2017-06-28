@@ -6,13 +6,12 @@ echo " Your GIT username is $uname."
 echo ""
 echo "################################################################################"
 repo_name=`pwd | xargs basename`
-echo "################################################################################"
 echo " The name of the current directory will be the name of the repository."
 echo " The repository name is setting up for $repo_name."
 read -p " Please write in the first commit: " commit
 echo " Creating a README.md file."
 touch README.md
-echo "#$repo_name" >> README.md
+echo "# $repo_name" >> README.md
 echo " Down"
 echo "################################################################################"
 echo " Create an empty Git repository."
