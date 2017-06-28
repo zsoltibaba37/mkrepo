@@ -1,28 +1,44 @@
 #!/bin/bash
 uname=`cat ~/.gitconfig | grep name | awk '{print $3}'`
+echo "################################################################################"
+echo ""
 echo " Your GIT username is $uname."
+echo ""
+echo "################################################################################"
 repo_name=`pwd | xargs basename`
+echo "################################################################################"
 echo " The name of the current directory will be the name of the repository."
 echo " The repository name is setting up for $repo_name."
 read -p " Please write in the first commit: " commit
 echo " Creating a README.md file."
 touch README.md
-echo "#$reponame" >> README.md
+echo "#$repo_name" >> README.md
 echo " Down"
+echo "################################################################################"
 echo " Create an empty Git repository."
 git init
 echo " Down"
-echo " Record changes to the repository."
-git commit -a -m "$commit"
+echo "################################################################################"
+echo " Add all files."
+git add .
 echo " Down"
+echo "################################################################################"
+echo " Record changes to the repository."
+git commit -m "$commit"
+echo " Down"
+echo "################################################################################"
 curl -u $uname https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
 echo " Adds a remote named <name> for the repository at <url>."
 git remote add origin "git@github.com:$uname/$repo_name.git"
 echo " Down"
+echo "################################################################################"
 echo " Push all file to the repository, and set upstream."
 git push -u origin master
 echo " Down"
-Echo " And finally let see the status of the repository."
+echo "################################################################################"
+echo " And finally let see the status of the repository."
 git status
+echo "################################################################################"
 echo " The $repo_name repository has been completed."
 echo " Bye Bye. And have a nice day."
+echo "################################################################################"
