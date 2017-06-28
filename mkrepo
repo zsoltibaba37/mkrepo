@@ -5,7 +5,10 @@ repo_name=`pwd | xargs basename`
 echo " The name of the current directory will be the name of the repository."
 echo " The repository name is setting up for $repo_name."
 read -p " Please write in the first commit: " commit
-#
+echo " Creating a README.md file."
+touch README.md
+echo "#$reponame" >> README.md
+echo " Down"
 echo " Create an empty Git repository."
 git init
 echo " Down"
