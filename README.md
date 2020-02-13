@@ -11,6 +11,15 @@ The repository name is same as the current directory name.
 
 You do not have to install it.
 
+```
+$ vim .bashrc
+
+export ATOKEN="sdkjfhsdklfhsdljhaflkjdhfajk"
+
+                  ^ Your token
+
+```
+
 #### Files
 
 mkrepo
@@ -77,4 +86,5 @@ nothing to commit, working tree clean
  Bye Bye. And have a nice day.
 ################################################################################
 ```
-2017-06-27
+2020-02-13
+

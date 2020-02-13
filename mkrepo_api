@@ -1,6 +1,5 @@
 #!/bin/bash
 uname=`cat ~/.gitconfig | grep name | awk '{print $3}'`
-atoken=`cat /home/pzsolti/.pat`
 echo "################################################################################"
 echo ""
 echo " Your GIT username is $uname."
@@ -28,7 +27,7 @@ git commit -m "$commit"
 echo " Down"
 echo "################################################################################"
 echo " Adds a remote named <name> for the repository at <url>."
-curl -H "Authorization: token $atoken" https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
+curl -H "Authorization: token $ATOKEN" https://api.github.com/user/repos -d "{\"name\":\"$repo_name\"}"
 git remote add origin "git@github.com:$uname/$repo_name.git"
 echo " Down"
 echo "################################################################################"
