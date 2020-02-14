@@ -22,19 +22,23 @@ export ATOKEN="sdkjfhsdklfhsdljhaflkjdhfajk"
 
 #### Files
 
+```
 mkrepo
+
+mkrepo_api
+```
 
 #### How to execute the script
 
 First time I copy the file to the bin folder. 
 ```sh
-$ chmod +x mkrepo
-$ sudo cp -p mkrepo /usr/local/bin
+$ chmod +x mkrepo_api
+$ sudo cp -p mkrepo_api /usr/local/bin
 $ sudo chown root:root /usr/local/bin/*
 ```
 Go to the git working folder and...
 ```sh
-$ mkrepo
+$ mkrepo_api
 ```
 
 ### How it works
@@ -86,5 +90,5 @@ nothing to commit, working tree clean
  Bye Bye. And have a nice day.
 ################################################################################
 ```
-2020-02-13
+2020-02-14
 
