@@ -16,7 +16,7 @@ $ vim .bashrc
 
 export ATOKEN="sdkjfhsdklfhsdljhaflkjdhfajk"
 
-                  ^ Your token
+                  ^ Your Personal access token
 
 ```
 
