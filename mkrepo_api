@@ -19,7 +19,7 @@ git init &&
 echo " Down"
 echo "################################################################################"
 echo " Add all files."
-git add README.md &&
+git add . &&
 echo " Down"
 echo "################################################################################"
 echo " Record changes to the repository."
