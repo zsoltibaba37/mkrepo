@@ -23,8 +23,6 @@ export ATOKEN="sdkjfhsdklfhsdljhaflkjdhfajk"
 #### Files
 
 ```
-mkrepo
-
 mkrepo_api
 ```
 
@@ -90,5 +88,5 @@ nothing to commit, working tree clean
  Bye Bye. And have a nice day.
 ################################################################################
 ```
-2020-11-05
+2026-01-27
 
