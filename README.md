@@ -50,24 +50,19 @@ $ mkrepo_api
  The repository name is setting up for temp.
  Please write in the first commit: 1234
  Creating a README.md file.
- Down
 ################################################################################
  Create an empty Git repository.
 Initialized empty Git repository in /home/username/temp/.git/
- Down
 ################################################################################
  Add all files.
- Down
 ################################################################################
  Record changes to the repository.
 [master (root-commit) c540882] 1234
  1 file changed, 1 insertion(+)
  create mode 100644 README.md
- Down
 ################################################################################
 Enter host password for user 'zsoltibaba37':
  Adds a remote named <name> for the repository at <url>.
- Down
 ################################################################################
  Push all file to the repository, and set upstream.
 Enter passphrase for key '/home/username/.ssh/id_rsa':
@@ -77,7 +72,6 @@ Total 3 (delta 0), reused 0 (delta 0)
 To github.com:zsoltibaba37/temp.git
  * [new branch]      master -> master
 Branch master set up to track remote branch master from origin.
- Down
 ################################################################################
  And finally let see the status of the repository.
 On branch master
