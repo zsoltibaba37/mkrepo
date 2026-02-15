@@ -15,7 +15,7 @@ echo " The repository name is setting up for $repo_name."
 read -p " Please write in the first commit: " commit
 
 echo " Creating a README.md file."
-echo "# $repo_name" > README.md
+echo "# $repo_name" >> README.md
 
 echo "################################################################################"
 echo " Create an empty Git repository."
